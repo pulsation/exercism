@@ -1,0 +1,90 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-18 20:14:24.512135407 UTC
+
+interface difference-of-squares-1.2.0.5-GjQntn8vLZlFRy4cQTJxnH:Squares 8022
+  interface hash: e1fbb9888e2a9eaeba48d1b7b57f8663
+  ABI hash: 32f93d6b2769a401b2dbaa47f77f9875
+  export-list hash: 3c33d7672fffcec588072d505883a437
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 31d4c3bbe2bfb728167e9141861e7193
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Squares.difference
+  Squares.squareOfSums
+  Squares.sumOfSquares
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+cda90ab7cee500a741c803bf8d72c58b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Squares.$trModule3
+                   Squares.$trModule1) -}
+9cfada3cf596fb7272c086566c848044
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Squares.$trModule2) -}
+d9026ce8f68bfec322c71cce92cea9bd
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Squares"#) -}
+5294c513f012efdb879d83b7ed7f1f7f
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Squares.$trModule4) -}
+0417ee6fc399eef8343f29c281f4edf5
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("difference-of-squares-1.2.0.5-GjQntn8vLZlFRy4cQTJxnH"#) -}
+460f7728b8963c01bc76c5121be62164
+  difference :: GHC.Real.Integral a => a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S(LC(C(S))LLLLL)LL)LLLLLLLL),U(U(U(C(C1(U)),C(C1(U)),C(C1(U)),A,A,A,C(U)),U(U(C(C1(U)),A),A,A,A,A,A,A,A),A),A,A,A,A,A,A,A,A)><L,U>,
+     Unfolding: (\ @ a ($dIntegral :: GHC.Real.Integral a) (eta :: a) ->
+                 GHC.Num.-
+                   @ a
+                   (GHC.Real.$p1Real @ a (GHC.Real.$p1Integral @ a $dIntegral))
+                   (Squares.squareOfSums @ a $dIntegral eta)
+                   (Squares.sumOfSquares @ a $dIntegral eta)) -}
+d3cfc4f159ddcd9c33bfc3bd4a8a653a
+  squareOfSums :: GHC.Real.Integral a => a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S(LLC(C(S))LLLL)LL)LLLLLLLL),U(U(U(C(C1(U)),C(C1(U)),1*C1(C1(U)),A,A,A,C(U)),U(U(C(C1(U)),A),A,A,A,A,A,A,A),A),A,A,A,A,A,A,A,A)><L,U>,
+     Unfolding: (\ @ a ($dIntegral :: GHC.Real.Integral a) (eta :: a) ->
+                 let {
+                   x :: a = Squares.sums @ a $dIntegral eta
+                 } in
+                 GHC.Num.*
+                   @ a
+                   (GHC.Real.$p1Real @ a (GHC.Real.$p1Integral @ a $dIntegral))
+                   x
+                   x) -}
+ac41a6d13fbfedd150e3503ce6274c1b
+  sumOfSquares :: GHC.Real.Integral a => a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SS(S(C(C(S))L)LLLLLLL)L)LLLLLLLL),U(U(U(C(C1(U)),C(C1(U)),C(C1(U)),A,A,A,C(U)),U(U(C(C1(U)),A),A,A,A,A,A,A,A),A),A,A,A,A,A,A,A,A)><L,U> -}
+10420fec112f47d1a181b7bd8d088be2
+  sums :: GHC.Real.Integral a => a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SS(S(C(C(S))L)LLLLLLL)L)LLLLLLLL),U(U(U(C(C1(U)),C(C1(U)),A,A,A,A,C(U)),U(U(C(C1(U)),A),A,A,A,A,A,A,A),A),A,A,A,A,A,A,A,A)><L,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
